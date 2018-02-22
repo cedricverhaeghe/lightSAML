@@ -15,6 +15,7 @@ use LightSaml\SamlConstants;
 
 class MetadataCriteria implements TrustCriteriaInterface
 {
+    const CLASSNAME = __CLASS__;
     const TYPE_IDP = 'idp';
     const TYPE_SP = 'sp';
 

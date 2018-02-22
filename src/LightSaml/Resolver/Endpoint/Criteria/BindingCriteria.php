@@ -15,6 +15,8 @@ use LightSaml\Criteria\CriteriaInterface;
 
 class BindingCriteria implements CriteriaInterface
 {
+    const CLASSNAME = __CLASS__;
+
     /**
      * Binding => Preference.
      *

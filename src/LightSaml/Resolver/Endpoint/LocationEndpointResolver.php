@@ -25,13 +25,13 @@ class LocationEndpointResolver implements EndpointResolverInterface
      */
     public function resolve(CriteriaSet $criteriaSet, array $candidates)
     {
-        if (false === $criteriaSet->has(LocationCriteria::class)) {
+        if (false === $criteriaSet->has(LocationCriteria::CLASSNAME)) {
             return $candidates;
         }
 
         $result = array();
         /** @var LocationCriteria $locationCriteria */
-        foreach ($criteriaSet->get(LocationCriteria::class) as $locationCriteria) {
+        foreach ($criteriaSet->get(LocationCriteria::CLASSNAME) as $locationCriteria) {
             foreach ($candidates as $endpointReference) {
                 if ($endpointReference->getEndpoint()->getLocation() == $locationCriteria->getLocation()) {
                     $result[] = $endpointReference;

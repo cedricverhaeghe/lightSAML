@@ -13,4 +13,5 @@ namespace LightSaml\Credential\Criteria;
 
 class X509CredentialCriteria implements TrustCriteriaInterface
 {
+    const CLASSNAME = __CLASS__;
 }

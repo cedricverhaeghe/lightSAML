@@ -13,6 +13,8 @@ namespace LightSaml\Credential\Criteria;
 
 class UsageCriteria implements TrustCriteriaInterface
 {
+    const CLASSNAME = __CLASS__;
+
     /** @var string */
     protected $usage;
 

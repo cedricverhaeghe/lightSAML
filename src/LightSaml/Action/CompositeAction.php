@@ -15,6 +15,8 @@ use LightSaml\Context\ContextInterface;
 
 class CompositeAction implements ActionInterface, DebugPrintTreeActionInterface, CompositeActionInterface
 {
+    const CLASSNAME = __CLASS__;
+
     /** @var ActionInterface[] */
     protected $children = array();
 
@@ -90,7 +92,7 @@ class CompositeAction implements ActionInterface, DebugPrintTreeActionInterface,
         }
 
         $result = array(
-            static::class => $arr,
+            static::CLASSNAME => $arr,
         );
 
         return $result;

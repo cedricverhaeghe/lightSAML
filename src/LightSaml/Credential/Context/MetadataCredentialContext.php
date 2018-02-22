@@ -17,6 +17,8 @@ use LightSaml\Model\Metadata\RoleDescriptor;
 
 class MetadataCredentialContext implements CredentialContextInterface
 {
+    const CLASSNAME = __CLASS__;
+
     /** @var KeyDescriptor */
     protected $keyDescriptor;
 

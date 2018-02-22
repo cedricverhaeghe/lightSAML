@@ -13,6 +13,8 @@ namespace LightSaml\Credential\Criteria;
 
 class PublicKeyThumbprintCriteria implements TrustCriteriaInterface
 {
+    const CLASSNAME = __CLASS__;
+
     /** @var string */
     private $thumbprint;
 

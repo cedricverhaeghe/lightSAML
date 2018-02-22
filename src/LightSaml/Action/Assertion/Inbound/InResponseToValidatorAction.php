@@ -55,7 +55,7 @@ class InResponseToValidatorAction extends AbstractAssertionAction
                 );
 
                 /** @var RequestStateContext $requestStateContext */
-                $requestStateContext = $context->getSubContext(ProfileContexts::REQUEST_STATE, RequestStateContext::class);
+                $requestStateContext = $context->getSubContext(ProfileContexts::REQUEST_STATE, RequestStateContext::CLASSNAME);
                 $requestStateContext->setRequestState($requestState);
             }
         }

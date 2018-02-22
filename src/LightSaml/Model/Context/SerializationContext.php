@@ -13,6 +13,8 @@ namespace LightSaml\Model\Context;
 
 class SerializationContext
 {
+    const CLASSNAME = __CLASS__;
+
     /** @var \DOMDocument */
     protected $document;
 

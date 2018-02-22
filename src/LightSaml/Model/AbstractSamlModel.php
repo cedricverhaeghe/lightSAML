@@ -17,6 +17,8 @@ use LightSaml\Model\Context\SerializationContext;
 
 abstract class AbstractSamlModel implements SamlElementInterface
 {
+    const CLASSNAME = __CLASS__;
+
     /**
      * @param string               $name
      * @param null|string          $namespace

@@ -79,7 +79,7 @@ class ProfileContext extends AbstractProfileContext
      */
     public function getInboundContext()
     {
-        return $this->getSubContext(ProfileContexts::INBOUND_MESSAGE, MessageContext::class);
+        return $this->getSubContext(ProfileContexts::INBOUND_MESSAGE, MessageContext::CLASSNAME);
     }
 
     /**
@@ -87,7 +87,7 @@ class ProfileContext extends AbstractProfileContext
      */
     public function getOutboundContext()
     {
-        return $this->getSubContext(ProfileContexts::OUTBOUND_MESSAGE, MessageContext::class);
+        return $this->getSubContext(ProfileContexts::OUTBOUND_MESSAGE, MessageContext::CLASSNAME);
     }
 
     /**
@@ -95,7 +95,7 @@ class ProfileContext extends AbstractProfileContext
      */
     public function getHttpRequestContext()
     {
-        return $this->getSubContext(ProfileContexts::HTTP_REQUEST, HttpRequestContext::class);
+        return $this->getSubContext(ProfileContexts::HTTP_REQUEST, HttpRequestContext::CLASSNAME);
     }
 
     /**
@@ -103,7 +103,7 @@ class ProfileContext extends AbstractProfileContext
      */
     public function getHttpResponseContext()
     {
-        return $this->getSubContext(ProfileContexts::HTTP_RESPONSE, HttpResponseContext::class);
+        return $this->getSubContext(ProfileContexts::HTTP_RESPONSE, HttpResponseContext::CLASSNAME);
     }
 
     /**
@@ -111,7 +111,7 @@ class ProfileContext extends AbstractProfileContext
      */
     public function getOwnEntityContext()
     {
-        return $this->getSubContext(ProfileContexts::OWN_ENTITY, EntityContext::class);
+        return $this->getSubContext(ProfileContexts::OWN_ENTITY, EntityContext::CLASSNAME);
     }
 
     /**
@@ -119,7 +119,7 @@ class ProfileContext extends AbstractProfileContext
      */
     public function getPartyEntityContext()
     {
-        return $this->getSubContext(ProfileContexts::PARTY_ENTITY, EntityContext::class);
+        return $this->getSubContext(ProfileContexts::PARTY_ENTITY, EntityContext::CLASSNAME);
     }
 
     /**
@@ -127,7 +127,7 @@ class ProfileContext extends AbstractProfileContext
      */
     public function getEndpointContext()
     {
-        return $this->getSubContext(ProfileContexts::ENDPOINT, EndpointContext::class);
+        return $this->getSubContext(ProfileContexts::ENDPOINT, EndpointContext::CLASSNAME);
     }
 
     /**
@@ -135,7 +135,7 @@ class ProfileContext extends AbstractProfileContext
      */
     public function getLogoutContext()
     {
-        return $this->getSubContext(ProfileContexts::LOGOUT, LogoutContext::class);
+        return $this->getSubContext(ProfileContexts::LOGOUT, LogoutContext::CLASSNAME);
     }
 
     /**

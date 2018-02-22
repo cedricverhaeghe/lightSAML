@@ -13,6 +13,8 @@ namespace LightSaml\Credential\Criteria;
 
 class EntityIdCriteria implements TrustCriteriaInterface
 {
+    const CLASSNAME = __CLASS__;
+
     /** @var string */
     protected $entityId;
 

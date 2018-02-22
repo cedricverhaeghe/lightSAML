@@ -15,6 +15,8 @@ use LightSaml\Criteria\CriteriaInterface;
 
 class LocationCriteria implements CriteriaInterface
 {
+    const CLASSNAME = __CLASS__;
+
     /** @var string */
     protected $location;
 

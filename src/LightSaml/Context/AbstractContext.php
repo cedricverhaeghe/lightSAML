@@ -13,6 +13,8 @@ namespace LightSaml\Context;
 
 abstract class AbstractContext implements ContextInterface
 {
+    const CLASSNAME = __CLASS__;
+
     /** @var ContextInterface|null */
     private $parent;
 
@@ -169,7 +171,7 @@ abstract class AbstractContext implements ContextInterface
     public function debugPrintTree($ownName = 'root')
     {
         $result = array(
-            $ownName => static::class,
+            $ownName => static::CLASSNAME,
         );
 
         if ($this->subContexts) {

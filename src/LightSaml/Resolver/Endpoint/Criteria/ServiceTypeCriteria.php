@@ -15,6 +15,8 @@ use LightSaml\Criteria\CriteriaInterface;
 
 class ServiceTypeCriteria implements CriteriaInterface
 {
+    const CLASSNAME = __CLASS__;
+
     /** @var string */
     protected $serviceType;
 

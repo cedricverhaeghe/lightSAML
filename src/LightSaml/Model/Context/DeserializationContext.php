@@ -16,6 +16,8 @@ use RobRichards\XMLSecLibs\XMLSecEnc;
 
 class DeserializationContext
 {
+    const CLASSNAME = __CLASS__;
+
     /** @var \DOMDocument */
     private $document;
 

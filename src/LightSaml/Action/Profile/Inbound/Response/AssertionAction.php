@@ -21,6 +21,8 @@ use Psr\Log\LoggerInterface;
 
 class AssertionAction extends AbstractProfileAction implements DebugPrintTreeActionInterface
 {
+    const CLASSNAME = __CLASS__;
+
     /** @var ActionInterface */
     private $assertionAction;
 
@@ -45,7 +47,7 @@ class AssertionAction extends AbstractProfileAction implements DebugPrintTreeAct
         foreach ($response->getAllAssertions() as $index => $assertion) {
             $name = sprintf('assertion_%s', $index);
             /** @var AssertionContext $assertionContext */
-            $assertionContext = $context->getSubContext($name, AssertionContext::class);
+            $assertionContext = $context->getSubContext($name, AssertionContext::CLASSNAME);
             $assertionContext
                 ->setAssertion($assertion)
                 ->setId($name)
@@ -70,7 +72,7 @@ class AssertionAction extends AbstractProfileAction implements DebugPrintTreeAct
         }
 
         $result = array(
-            static::class => $arr,
+            static::CLASSNAME => $arr,
         );
 
         return $result;
